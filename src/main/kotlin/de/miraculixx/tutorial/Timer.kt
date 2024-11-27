@@ -29,7 +29,7 @@ object Timer {
 
     private fun displayTimer() {
         val suffix = if (paused) "Timer pausiert ($time)" else "$time"
-        val display = miniMessages.deserialize("<gradient:#707CF7:#F658CF:$offset><b>$suffix")
+        val display = miniMessages.deserialize("<gradient:#11FB4A:#000000:#00CB1E:$offset><b>$suffix")
         onlinePlayers.forEach { player ->
             player.sendActionBar(display)
         }
